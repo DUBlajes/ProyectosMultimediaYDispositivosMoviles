@@ -1,0 +1,40 @@
+Declaración de la clase Espia2:
+
+open class Espia2: Se define una clase llamada Espia2 marcada como open, lo que significa que otras clases pueden heredar de ella.
+var combinacionCorrecta: IntArray = IntArray(5): Se declara una propiedad llamada combinacionCorrecta que es un array de enteros (IntArray) con longitud 5. Esta propiedad se utilizará para almacenar la combinación de números generada aleatoriamente.
+Función generarCombinacion():
+
+fun generarCombinacion(): Es una función que genera aleatoriamente una combinación de 5 números enteros entre 0 y 9 y la almacena en la propiedad combinacionCorrecta.
+Función verificarCombinacion(intentoActual: IntArray):
+
+open fun verificarCombinacion(intentoActual: IntArray): String: Es una función abierta (puede ser sobrescrita por las clases hijas) que compara la combinación
+generada (combinacionCorrecta) con un intento proporcionado (intentoActual).
+Si los arreglos son iguales, devuelve "¡Combinación correcta!".
+Si no son iguales, genera pistas comparando cada número en las posiciones correspondientes de ambos arreglos. Crea un string con ">" si el número es mayor,
+ "<" si es menor y "=" si es igual.
+Declaración de la clase Mision2 que hereda de Espia2:
+
+class Mision2 : Espia2(): Se declara una clase llamada Mision2 que hereda de la clase Espia2.
+Propiedad oportunidadesRestantes en la clase Mision2:
+
+var oportunidadesRestantes = 5: Se declara una propiedad en la clase Mision2 para contar las oportunidades restantes.
+Función jugar() en la clase Mision2:
+
+fun jugar(): Es una función que representa la lógica principal del juego.
+Utiliza un bucle while para permitir al jugador intentar adivinar la combinación hasta que se queden sin oportunidades.
+En cada iteración, solicita un intento al jugador, verifica la combinación y muestra las pistas.
+Si la combinación es correcta, imprime un mensaje de éxito y termina el juego.
+Si se quedan sin oportunidades, imprime un mensaje de fracaso.
+Función solicitarIntento() en la clase Mision2:
+
+private fun solicitarIntento(): IntArray: Solicita al jugador que ingrese un intento (5 números del 0 al 9, separados por espacios).
+Utiliza readLine() para obtener la entrada del usuario.
+Utiliza split(" ") para dividir la cadena en substrings.
+Utiliza mapNotNull { it.toIntOrNull() } para convertir cada substring a un entero y filtrar aquellos que no puedan convertirse.
+Utiliza toIntArray() para convertir la lista resultante a un array de enteros. Si la entrada es nula o no se pueden obtener enteros válidos,
+ se proporciona un IntArray predeterminado con cinco elementos.
+Función main():
+
+Crea una instancia de Mision2.
+Genera una combinación aleatoria llamando a generarCombinacion().
+Inicia el juego llamando a jugar().
