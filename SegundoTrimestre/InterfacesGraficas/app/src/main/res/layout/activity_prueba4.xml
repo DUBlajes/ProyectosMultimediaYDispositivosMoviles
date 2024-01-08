@@ -127,6 +127,30 @@
         app:layout_constraintBottom_toTopOf="@+id/view9"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="@+id/view9" />
-
+    <View
+        android:id="@+id/view13"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#4CAF50"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <View
+        android:id="@+id/view14"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FF9800"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+    
+    <View
+        android:id="@+id/view115"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#2196F3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
