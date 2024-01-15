@@ -18,8 +18,8 @@ class MainActivity2 : AppCompatActivity() {
         val etOperador2 = findViewById<AppCompatEditText>(R.id.etOperador2)
 
         btnSumar.setOnClickListener {
-            val operador1 = etOperador1.text.toString().toInt()
-            val operador2 = etOperador2.text.toString().toInt()
+            val operador1 = etOperador1.text.toString().toDouble()
+            val operador2 = etOperador2.text.toString().toDouble()
             val intent1 = Intent(this, ResultActivity::class.java).apply {
                 putExtra("OPERATION_TYPE", "SUMAR")
                 putExtra("OPERADOR1", operador1)
@@ -28,8 +28,8 @@ class MainActivity2 : AppCompatActivity() {
             startActivity(intent1)
         }
         btnRestar.setOnClickListener {
-            val operador1 = etOperador1.text.toString().toInt()
-            val operador2 = etOperador2.text.toString().toInt()
+            val operador1 = etOperador1.text.toString().toDouble()
+            val operador2 = etOperador2.text.toString().toDouble()
             val intent2 = Intent(this, ResultActivity::class.java).apply {
                 putExtra("OPERATION_TYPE", "RESTAR")
                 putExtra("OPERADOR1", operador1)
@@ -38,8 +38,8 @@ class MainActivity2 : AppCompatActivity() {
             startActivity(intent2)
         }
         btnMultiplicar.setOnClickListener {
-            val operador1 = etOperador1.text.toString().toInt()
-            val operador2 = etOperador2.text.toString().toInt()
+            val operador1 = etOperador1.text.toString().toDouble()
+            val operador2 = etOperador2.text.toString().toDouble()
             val intent3 = Intent(this, ResultActivity::class.java).apply {
                 putExtra("OPERATION_TYPE", "MULTIPLICAR")
                 putExtra("OPERADOR1", operador1)
@@ -48,8 +48,8 @@ class MainActivity2 : AppCompatActivity() {
             startActivity(intent3)
         }
         btnDividir.setOnClickListener {
-            val operador1 = etOperador1.text.toString().toInt()
-            val operador2 = etOperador2.text.toString().toInt()
+            val operador1 = etOperador1.text.toString().toDouble()
+            val operador2 = etOperador2.text.toString().toDouble()
             val intent4 = Intent(this, ResultActivity::class.java).apply {
                 putExtra("OPERATION_TYPE", "DIVIDIR")
                 putExtra("OPERADOR1", operador1)

@@ -13,18 +13,19 @@ class ResultActivity : AppCompatActivity() {
         val operationType = intent.getStringExtra("OPERATION_TYPE")
 
         // Coge los operadores de los intent
-        val operador1 = intent.getIntExtra("OPERADOR1", 0)
-        val operador2 = intent.getIntExtra("OPERADOR2", 0)
+        val operador1 = intent.getDoubleExtra("OPERADOR1", 0.0)
+        val operador2 = intent.getDoubleExtra("OPERADOR2", 0.0)
 
         // Hace la operación correspondiente dependiendo del tipo de operacion
         val resultado = when (operationType) {
             "SUMAR" -> operador1 + operador2
             "RESTAR" -> operador1 - operador2
             "MULTIPLICAR" -> operador1 * operador2
-            "DIVIDIR" -> if (operador2 != 0) operador1 / operador2 else 0
-            else -> 0
+            "DIVIDIR" -> if (operador2 != 0.0) {
+                operador1 / operador2
+            }else 0.0
+            else -> 0.0
         }
-
         // Muestra el resultado
         tvResult.text = "Resultado: $resultado"
     }
