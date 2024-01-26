@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/fondo"
     tools:context=".ResultActivity">
 
     <TextView
@@ -16,7 +17,7 @@
         android:layout_marginBottom="5dp"
         android:text="Tu resultado"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/cardView"
@@ -28,6 +29,7 @@
         android:id="@+id/cardView"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        app:cardCornerRadius="16dp"
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
         android:layout_marginBottom="142dp"
@@ -35,7 +37,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTuResultado"
-        app:cardBackgroundColor="@color/grey">
+        app:cardBackgroundColor="@color/fondoCVSinSeleccionar">
 
         <TextView
             android:id="@+id/tvResultadoLetras"
@@ -58,7 +60,7 @@
             android:layout_marginTop="230dp"
             android:text="Resultado en numeros"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="30dp"
             android:textStyle="bold"></TextView>
 
@@ -69,7 +71,7 @@
             android:layout_marginTop="400dp"
             android:text="Mensaje Resultado"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="30dp"
             android:textStyle="bold">
         </TextView>
