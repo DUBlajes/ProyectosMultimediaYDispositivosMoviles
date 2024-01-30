@@ -12,4 +12,9 @@
     <color name="blue">#3498E4</color>
     <color name="pink">#EA96E5</color>
     <color name="green">#8BC34A</color>
+    <color name="yellow">#FFC107</color>
+    <color name="orange">#FF5722</color>
+    <color name="fondo">#191F40</color>
+    <color name="fondoCVSinSeleccionar">#3D4051</color>
+
 </resources>

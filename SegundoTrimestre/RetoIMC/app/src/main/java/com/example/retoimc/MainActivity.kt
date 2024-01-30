@@ -1,5 +1,6 @@
 package com.example.retoimc
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -32,6 +33,9 @@ class MainActivity : AppCompatActivity() {
     private lateinit var tvEdadNumero:TextView
     private lateinit var btnCalcular:Button
 
+    companion object{
+        const val RESULTADO_IMC="RESULTADO_IMC"
+    }
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -100,7 +104,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun irAResultado(resultado:Double){
-        
+        val intent= Intent(this,ResultActivity::class.java)
+        intent.putExtra(RESULTADO_IMC,resultado)
+        startActivity(intent)
     }
 
     private fun calcularIMC():Double{

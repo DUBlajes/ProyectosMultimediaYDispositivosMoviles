@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">RetoIMC</string>
+    <string name="error">Error</string>
+
+    <string name="titulo_bajo">Peso por debajo de lo normal</string>
+    <string name="descripcion_bajo">Estás por debajo del peso óptimo para tu peso y altura</string>
+
+    <string name="titulo_normal">Peso normal</string>
+    <string name="descripcion_normal">Estás en el peso óptimo para tu peso y altura</string>
+
+    <string name="titulo_sobrepeso">Sobrepeso</string>
+    <string name="descripcion_sobrepeso">Estás un poco por encima del peso óptimo para tu peso y altura</string>
+
+    <string name="titulo_obesidad">Obesidad</string>
+    <string name="descripcion_obesidad">Estás muy por encima del peso óptimo para tu peso y altura</string>
+
+
 </resources>
