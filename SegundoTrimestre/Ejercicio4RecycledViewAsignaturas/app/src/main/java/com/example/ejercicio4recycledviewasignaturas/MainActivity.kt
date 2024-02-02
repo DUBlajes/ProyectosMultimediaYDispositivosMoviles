@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 
 
-val courses = listOf(
+val cursos = listOf(
     Curso("1º DAM", listOf(Asignatura("Programación"), Asignatura("Bases de Datos"), Asignatura("Redes"))),
     Curso("2º DAM", listOf(Asignatura("Desarrollo Web"), Asignatura("Seguridad"), Asignatura("Empresas")))
 )
@@ -23,8 +23,8 @@ class MainActivity : AppCompatActivity() {
 
         val recyclerViewCourses: RecyclerView = findViewById(R.id.reciclerViewCursos)
         recyclerViewCourses.layoutManager = LinearLayoutManager(this)
-        recyclerViewCourses.adapter = CursoAdapter(courses) { course ->
-            showSubjectsDialog(course)
+        recyclerViewCourses.adapter = CursoAdapter(cursos) { curso ->
+            showSubjectsDialog(curso)
         }
     }
 
