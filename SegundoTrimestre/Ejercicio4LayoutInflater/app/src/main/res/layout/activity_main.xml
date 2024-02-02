@@ -1,0 +1,22 @@
+<!-- activity_main.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayoutContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity4">
+
+    <!-- Otros componentes pueden estar presentes aquí -->
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="248dp"
+        android:layout_height="117dp"
+        android:text="Hola, soy un TextView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="281dp" />
+
+</LinearLayout>
