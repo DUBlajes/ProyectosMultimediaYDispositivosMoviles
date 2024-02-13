@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etMarca"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Marca" />
+
+    <EditText
+        android:id="@+id/etModelo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Modelo" />
+
+    <EditText
+        android:id="@+id/etAnio"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Año" />
+
+    <EditText
+        android:id="@+id/etTipo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Tipo" />
+
+    <EditText
+        android:id="@+id/etTalla"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Talla" />
+
+    <EditText
+        android:id="@+id/etCodFabric"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Código Fabricante" />
+
+    <EditText
+        android:id="@+id/etCodDepo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Código Depósito" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:columnCount="3">
+
+        <Button
+            android:id="@+id/btnAgregar"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Agregar" />
+
+        <Button
+            android:id="@+id/btnModificar"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:text="Modificar" />
+
+        <Button
+            android:id="@+id/btnEliminar"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:text="Eliminar" />
+
+        <Button
+            android:id="@+id/btnMostrar"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_columnSpan="2"
+            android:text="Mostrar Datos (Todos)" />
+
+        <EditText
+            android:id="@+id/etId"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/purple_200"
+            android:hint="Id"
+            android:textAlignment="center"
+            android:textColorHint="@color/white" />
+
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:gravity="center_horizontal"
+        android:text="Para modificar un registro pon el id y dale a 'mostrar datos', desde ahi modifica lo que necesites y dale a 'modificar datos'."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvMuestraNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+
+</LinearLayout>
+
