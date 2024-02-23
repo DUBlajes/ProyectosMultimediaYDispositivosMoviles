@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "375641994387",
+    "project_id": "proyectofirebase-aguerrero",
+    "storage_bucket": "proyectofirebase-aguerrero.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375641994387:android:f0ab504ece3a16ea380966",
+        "android_client_info": {
+          "package_name": "com.example.proyectofirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtOmGhjeetxS9bCkUe32NlOeZZf-nnZxI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

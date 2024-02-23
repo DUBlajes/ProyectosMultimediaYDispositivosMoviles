@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TuNombreDeAplicación</string>
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="register">Registrarse</string>
+</resources>
